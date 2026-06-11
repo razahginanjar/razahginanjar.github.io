@@ -1,0 +1,5 @@
+
+# IMPORTANT: leading "/" anchors these to the root only — the in-use icons
+# under umaboot-intellij/src/main/resources/ and umaboot-vscode/resources/
+# stay tracked.
+/CV_Razah Deden G.pdf
