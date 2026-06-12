@@ -545,8 +545,7 @@
     .timeline-card,
     .project-card,
     .education-card,
-    .contact-card,
-    .cert-card {
+    .contact-card {
       border: 1px solid var(--line);
       border-radius: var(--radius);
       background: var(--surface);
@@ -556,8 +555,7 @@
     .timeline-card:hover,
     .project-card:hover,
     .education-card:hover,
-    .contact-card:hover,
-    .cert-card:hover {
+    .contact-card:hover {
       transform: translateY(-3px);
       border-color: rgba(127, 181, 150, 0.62);
       background: var(--surface-2);
@@ -706,53 +704,6 @@
       margin-bottom: 0;
     }
 
-    .cert-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 16px;
-    }
-
-    .cert-card {
-      display: flex;
-      min-height: 210px;
-      flex-direction: column;
-      padding: 22px;
-    }
-
-    .cert-status {
-      display: inline-flex;
-      width: fit-content;
-      min-height: 28px;
-      align-items: center;
-      border: 1px solid rgba(127, 181, 150, 0.42);
-      border-radius: 6px;
-      background: rgba(127, 181, 150, 0.08);
-      padding: 4px 8px;
-      color: var(--accent);
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      font-weight: 800;
-      margin-bottom: 18px;
-    }
-
-    .cert-card p {
-      color: var(--muted);
-    }
-
-    .cert-meta {
-      margin-top: auto;
-      padding-top: 18px;
-      color: var(--soft);
-      font-family: var(--font-mono);
-      font-size: 0.76rem;
-      font-weight: 800;
-    }
-
-    .cert-card .button {
-      width: fit-content;
-      margin-top: 18px;
-    }
-
     .contact-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -864,7 +815,6 @@
     .js-enabled .reveal .education-card,
     .js-enabled .reveal .project-card,
     .js-enabled .reveal .contact-card,
-    .js-enabled .reveal .cert-card,
     .js-enabled .reveal .metric,
     .js-enabled .reveal .chip {
       opacity: 0;
@@ -876,7 +826,6 @@
     .js-enabled .reveal.is-visible .education-card,
     .js-enabled .reveal.is-visible .project-card,
     .js-enabled .reveal.is-visible .contact-card,
-    .js-enabled .reveal.is-visible .cert-card,
     .js-enabled .reveal.is-visible .metric,
     .js-enabled .reveal.is-visible .chip {
       opacity: 1;
@@ -887,7 +836,6 @@
     .js-enabled .reveal.is-visible .education-card:nth-child(2),
     .js-enabled .reveal.is-visible .project-card:nth-child(2),
     .js-enabled .reveal.is-visible .contact-card:nth-child(2),
-    .js-enabled .reveal.is-visible .cert-card:nth-child(2),
     .js-enabled .reveal.is-visible .chip:nth-child(2n) {
       transition-delay: 70ms;
     }
@@ -895,7 +843,6 @@
     .js-enabled .reveal.is-visible .metric:nth-child(3),
     .js-enabled .reveal.is-visible .project-card:nth-child(3),
     .js-enabled .reveal.is-visible .contact-card:nth-child(3),
-    .js-enabled .reveal.is-visible .cert-card:nth-child(3),
     .js-enabled .reveal.is-visible .chip:nth-child(3n) {
       transition-delay: 130ms;
     }
@@ -927,7 +874,6 @@
       .js-enabled .reveal .education-card,
       .js-enabled .reveal .project-card,
       .js-enabled .reveal .contact-card,
-      .js-enabled .reveal .cert-card,
       .js-enabled .reveal .metric,
       .js-enabled .reveal .chip {
         opacity: 1;
@@ -981,8 +927,7 @@
       }
 
       .projects-grid,
-      .contact-grid,
-      .cert-grid {
+      .contact-grid {
         grid-template-columns: 1fr;
       }
 
